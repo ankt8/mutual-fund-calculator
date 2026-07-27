@@ -259,7 +259,7 @@ export default function Calculator() {
         <div className="space-y-6 lg:col-span-8" ref={summaryRef}>
           {/* Summary Cards */}
           {mode === 'swp' ? (
-            <div className={`grid gap-4 ${inflationEnabled ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
+            <div className={`grid gap-3 grid-cols-2 ${inflationEnabled ? 'lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
               <ResultCard type="invested" value={results.totalInvested} />
               <ResultCard type="withdrawn" value={results.totalWithdrawn} />
               <ResultCard type="balance" value={results.finalBalance} />
@@ -268,7 +268,7 @@ export default function Calculator() {
               )}
             </div>
           ) : (
-            <div className={`grid gap-4 ${inflationEnabled ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
+            <div className={`grid gap-3 grid-cols-2 ${inflationEnabled ? 'lg:grid-cols-4' : 'sm:grid-cols-3'}`}>
               <ResultCard type="invested" value={results.totalInvested} />
               <ResultCard type="returns" value={results.estimatedReturns} />
               <ResultCard type="total" value={results.totalValue} />

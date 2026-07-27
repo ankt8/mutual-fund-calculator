@@ -55,7 +55,7 @@ export default function ResultCard({ type, value }) {
   return (
     <div
       className="group relative overflow-hidden rounded-2xl border border-slate-100
-                 bg-white p-5 shadow-sm transition-all duration-300
+                 bg-white p-4 shadow-sm transition-all duration-300
                  hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-800"
     >
       {/* Decorative gradient bar */}
@@ -64,19 +64,17 @@ export default function ResultCard({ type, value }) {
                     opacity-80 transition-all duration-300 group-hover:h-1.5`}
       />
 
-      <div className="flex items-start gap-3">
-        <div className={`shrink-0 rounded-xl ${cfg.bg} p-2.5`}>
-          <Icon className={`h-5 w-5 ${cfg.text}`} />
+      <div className="flex items-center gap-2">
+        <div className={`shrink-0 rounded-lg ${cfg.bg} p-2`}>
+          <Icon className={`h-4 w-4 ${cfg.text}`} />
         </div>
-        <div className="min-w-0">
-          <p className="text-xs font-medium tracking-wide text-slate-500 uppercase dark:text-slate-400">
-            {cfg.label}
-          </p>
-          <p className="mt-1 text-lg font-bold text-slate-800 dark:text-white sm:text-xl xl:text-2xl">
-            {formatCurrency(animated)}
-          </p>
-        </div>
+        <p className="text-[11px] font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+          {cfg.label}
+        </p>
       </div>
+      <p className="mt-2 text-xl font-bold text-slate-800 dark:text-white sm:text-2xl">
+        {formatCurrency(animated)}
+      </p>
     </div>
   );
 }
