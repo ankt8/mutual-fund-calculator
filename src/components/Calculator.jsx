@@ -3,6 +3,7 @@ import { Download, Share2 } from 'lucide-react';
 import InputSlider from './InputSlider';
 import ResultCard from './ResultCard';
 import ChartSection from './ChartSection';
+
 import { calculateSIP, calculateLumpsum, calculateSWP, getYearlyGrowth } from '../utils/calculations';
 import { formatCurrency } from '../utils/format';
 

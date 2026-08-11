@@ -54,7 +54,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-200/60 py-6 text-center text-xs text-slate-400 dark:border-slate-700/60 dark:text-slate-600">
-        Built with React, Tailwind CSS & Recharts
+        
       </footer>
     </div>
   );
